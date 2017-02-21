@@ -1,0 +1,19 @@
+.starter-template {
+  margin-left: 300px;
+}
+.form-group {
+  align-items: center;
+}
+.form-control {
+  width: 400px;
+}
+span {
+  color: red;
+}
+h2 {
+  color: green;
+}
+img {
+  width: 400px;
+  height: 300px;
+}
