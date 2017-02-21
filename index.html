@@ -5,39 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="form.css">
   </head>
   <body>
     <div class="container">
       <div class="starter-template">
         <h1>Javascript Validation Form</h1>
         <form>
-          <div class="form-group row">
-            <label for="example-text-input" class="col-2 col-form-label">姓名</label>
-            <div class="col-10">
-              <input class="form-control" type="text" id="name">
+          <div class="form-group">
+            <label class="col-form-label">姓名</label>
+            <div class="">
+              <input class="form-control" id="name">
             </div>
-            <p id='nameHint'></p>
+            <span id='nameHint'></span>
           </div>
-          <div class="form-group row">
-            <label for="example-search-input" class="col-2 col-form-label">身分證</label>
-            <div class="col-10">
-              <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+          <div class="form-group">
+            <label class=" col-form-label">身分證</label>
+            <div class="">
+              <input class="form-control" id="number" />
+              <span id='numberHint'></span>
             </div>
+
           </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">電話</label>
-            <div class="col-10">
-              <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+          <div class="form-group">
+            <label class="col-form-label">電話</label>
+            <div>
+              <input class="form-control" id="phone" >
             </div>
+            <span id='phoneHint'></span>
           </div>
           <button type="button" id='submit-btn' class="btn btn-default">提交</button>
         </form>
+        <div id="imagePlace"></div>
       </div>
     </div><!-- /.container -->
   </body>
-  <script type="text/javascript" src="main.js"></script>  
+  <script type="text/javascript" src="main.js"></script>
 </html>
-
- 
-
-
