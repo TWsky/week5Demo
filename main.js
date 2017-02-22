@@ -20,8 +20,8 @@ function myFunc() {
   	phoneHint.innerHTML='長度正確';
   	check++;
   }
-  var id=document.getElementById('id');
-  var idHint=document.getElementById('idHint');
+  var id=document.getElementById('uid');
+  var idHint=document.getElementById('uidHint');
   if(id.search(/^[A-Z]{1}[1-2]{1}[0-9]{8}$/)==-1){
   	idHint.innerHTML='身分證字號格式錯誤';
   }
