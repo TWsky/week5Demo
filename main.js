@@ -2,7 +2,7 @@ var myElement = document.getElementById('submit-btn');
 myElement.addEventListener('click', myFunc);
 
 function myFunc() {
-	var check=0;
+  var check=0;
   var name = document.getElementById('name');
   var nameHint = document.getElementById('nameHint');
   if(name.value.length == 0){
