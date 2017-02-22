@@ -20,18 +20,19 @@ function myFunc() {
   	phoneHint.innerHTML='長度正確';
   	check++;
   }
-  var id=document.getElementById('uid');
+  var uid=document.getElementById('uid');
   var idHint=document.getElementById('uidHint');
-  if(id.search(/^[A-Z]{1}[1-2]{1}[0-9]{8}$/)==-1){
-  	idHint.innerHTML='身分證字號格式錯誤';
+  var idcheck= new RegExp(/^[A-Z]{1}[1-2]{1}[0-9]{8}$/);
+  if(idcheck.test(uid.value)!=1){
+  	uidHint.innerHTML='身分證字號格式錯誤';
   }
   else{
-  	idHint.innerHTML='身分證字號格式正確';
+  	uidHint.innerHTML='身分證字號格式正確';
   	check++;
   }
-  var img=document.getElementById('img');
+  var image=document.getElementById('img');
   if(check==3)
   {
-  	img.innerHTML="<img src="https://crazypic.ck101.com/1/6/16eb63a30474418cef067370c26c077c.jpg">"	
+  	image.innerHTML="<img src=\"https://crazypic.ck101.com/1/6/16eb63a30474418cef067370c26c077c.jpg\">"	
   }
 }
