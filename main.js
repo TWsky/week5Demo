@@ -30,9 +30,9 @@ function myFunc() {
   	uidHint.innerHTML='身分證字號格式正確';
   	check++;
   }
-  var image=document.getElementById('img');
+  var img=document.getElementById('img');
   if(check==3)
   {
-  	image.innerHTML="<img src=\"https://crazypic.ck101.com/1/6/16eb63a30474418cef067370c26c077c.jpg\">"	
+  	img.innerHTML="<img src=\"https://crazypic.ck101.com/1/6/16eb63a30474418cef067370c26c077c.jpg\">"	
   }
 }
