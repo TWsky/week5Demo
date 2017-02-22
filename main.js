@@ -7,7 +7,6 @@ function myFunc() {
   var nameHint = document.getElementById('nameHint');
   if(name.value.length == 0){
     nameHint.innerHTML = 'this value is error!';
-    nameHint.className = 'error';
   } else {
     nameHint.innerHTML = 'this value is correct!';
     check++;
@@ -15,8 +14,7 @@ function myFunc() {
   var phone =document.getElementById('phone');
   var phoneHint=document.getElementById('phoneHint');
   if(phone.value.length!=10){
-  	phoneHint.innerHTML="電話長度應為10個數字";
-  	phoneHint.className='error';
+  	phoneHint.innerHTML='電話長度應為10個數字';
   }
   else{
   	phoneHint.innerHTML='長度正確';
@@ -26,7 +24,6 @@ function myFunc() {
   var idHint=document.getElementById('idHint');
   if(id.search(/^[A-Z]{1}[1-2]{1}[0-9]{8}$/)==-1){
   	idHint.innerHTML='身分證字號格式錯誤';
-  	idHint.className='error';
   }
   else{
   	idHint.innerHTML='身分證字號格式正確';
