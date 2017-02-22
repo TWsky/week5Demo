@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      p {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -13,10 +18,21 @@
         <form>
           <div class="form-group">
             <label for="name">姓名</label>
-            <input type="name" class="form-control" id="name" placeholder="name">
+            <input type="name" class="form-control" id="name">
             <p id='nameHint'></p>
           </div>
+          <div class = "form-group">
+            <label for="phone">電話</label>
+            <input type="text" class="form-control" id="phone">
+            <p id='phoneHint'></p>
+          </div>
+          <div class = "form-group">
+            <label for="ID">身分證字號</label>
+            <input type="text" class="form-control" id="ID">
+            <p id='IDHint'></p>
+          </div>
           <button type="button" id='submit-btn' class="btn btn-default">提交</button>
+          <div id = "image"></div>
         </form>
       </div>
     </div><!-- /.container -->
